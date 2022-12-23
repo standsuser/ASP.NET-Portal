@@ -23,7 +23,8 @@
                     <asp:TextBox runat="server" required="required" Enabled="true" name="Email" ID="email" class="form-control input-group"></asp:TextBox><br />
 
                            <asp:Label runat="server" AssociatedControlID="password"><b>Password: </b></asp:Label><br />
-                    <asp:TextBox runat="server" required="required" Enabled="true" name="password" ID="password" class="form-control input-group"></asp:TextBox><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" TextMode="Password" name="password" ID="password" class="form-control input-group"></asp:TextBox><br />
+                            <input type="submit" value="Submit">
                 </div>
             </div>
         </div>
