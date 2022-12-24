@@ -24,7 +24,7 @@
 
                            <asp:Label runat="server" AssociatedControlID="password"><b>Password: </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" TextMode="Password" name="password" ID="password" class="form-control input-group"></asp:TextBox><br />
-                            <input type="submit" value="Submit">
+                     &nbsp;<asp:Button ID="loginbutton" runat="server" OnClick="login_Click" Text="Login" />
                 </div>
             </div>
         </div>
