@@ -29,9 +29,10 @@ namespace GIU
             try
             {
 
-                string studentsqlquery = "EXEC UserLogin @email=@inputemail, @password=@inputpassword";
+                string mainsqlquery = "EXEC UserLogin @email=@inputemail, @password=@inputpassword";
+                string helpersqlquery = "EXEC LoginHelper @email=@inputemail, @password=@inputpassword";
 
-                SqlCommand sqlcomm = new SqlCommand(studentsqlquery, sqlconn);
+                SqlCommand sqlcomm = new SqlCommand(mainsqlquery, sqlconn);
 
                 sqlcomm.Parameters.AddWithValue("@inputemail", email.Text);
                 sqlcomm.Parameters.AddWithValue("@inputpassword", password.Text);
@@ -41,13 +42,13 @@ namespace GIU
                 sqlconn.Open();
 
 
-                sqlcomm.Parameters.Add("@ReturnValue", SqlDbType.Int, 4).Direction = ParameterDirection.ReturnValue;
+                sqlcomm.Parameters.Add("@success", SqlDbType.Int, 4).Direction = ParameterDirection.ReturnValue;
                sqlcomm.ExecuteNonQuery();
                 int id = Convert.ToInt32(sqlcomm.ExecuteScalar());
 
+
                 if (id == 1)
                 {
-
                     Response.Write("<script>alert('Login Successful')</script>");
 
                 }
@@ -65,9 +66,18 @@ namespace GIU
 
                 sqlconn.Close();
 
+                SqlCommand helper = new SqlCommand(helpersqlquery, sqlconn);
 
+                helper.Parameters.AddWithValue("@inputemail", email.Text);
+                helper.Parameters.AddWithValue("@inputpassword", password.Text);
 
+                sqlconn.Open();
 
+                helper.Parameters.Add("@tmp_id", SqlDbType.Int, 4).Direction = ParameterDirection.ReturnValue;
+                helper.ExecuteNonQuery();
+                int userid = Convert.ToInt32(helper.ExecuteScalar());
+
+                sqlconn.Close();
             }
             catch
             {
