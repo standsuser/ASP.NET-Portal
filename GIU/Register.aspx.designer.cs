@@ -15,6 +15,24 @@ namespace GIU
     {
 
         /// <summary>
+        /// idpass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel idpass;
+
+        /// <summary>
+        /// idpasslabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label idpasslabel;
+
+        /// <summary>
         /// txttempname control.
         /// </summary>
         /// <remarks>
@@ -114,13 +132,13 @@ namespace GIU
         protected global::System.Web.UI.WebControls.TextBox lname;
 
         /// <summary>
-        /// majorcodelabel control.
+        /// majorcodelabel0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label majorcodelabel;
+        protected global::System.Web.UI.WebControls.Label majorcodelabel0;
 
         /// <summary>
         /// majorcode control.
@@ -130,6 +148,78 @@ namespace GIU
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox majorcode;
+
+        /// <summary>
+        /// doblabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label doblabel;
+
+        /// <summary>
+        /// dateofbirth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox dateofbirth;
+
+        /// <summary>
+        /// addresslabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label addresslabel;
+
+        /// <summary>
+        /// inputaddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox inputaddress;
+
+        /// <summary>
+        /// semesterlabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label semesterlabel;
+
+        /// <summary>
+        /// inputsemester control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox inputsemester;
+
+        /// <summary>
+        /// gpalabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label gpalabel;
+
+        /// <summary>
+        /// inputgpa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox inputgpa;
 
         /// <summary>
         /// submitreg control.
