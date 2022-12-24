@@ -23,34 +23,41 @@ namespace GIU
 
             string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
-           // string sqlquery = "Insert into [dbo].[users] (user_role) values (@role)";
-            string sqlquery = "EXEC UserRegister @usertype= @role , @username=@user, @email=@email,@first_name=@fname, @last_name=NULL, @birth_date=NULL, @GPA=NULL, @semester =NULL, @address =NULL, @faculty_code=NULL, @major_code =NULL, @company_name =NULL, @representative_name =NULL, @representative_email =NULL, @phone_number =NULL, @country_of_residence=NULL";
-
-            SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn);
-            sqlcomm.Parameters.AddWithValue("@role", usertype.SelectedItem.Value);
-            sqlcomm.Parameters.AddWithValue("@user", username.Text);
-            sqlcomm.Parameters.AddWithValue("@email", email.Text);
-            sqlcomm.Parameters.AddWithValue("@fname", fname.Text);
-            sqlcomm.Parameters.AddWithValue("@lname", lname.Text);
-
-
-
-            sqlconn.Open();
-            int i = sqlcomm.ExecuteNonQuery();
-            if (i != 0)
+            // string sqlquery = "Insert into [dbo].[users] (user_role) values (@role)";
+            try
             {
-                if (usertype.SelectedItem.Text == "Select")
-                    Response.Write("<script>alert('Please Select a User Type')</script>");
+                string sqlquery = "EXEC UserRegister @usertype= @role , @username=@user, @email=@email,@first_name=@fname, @last_name=NULL, @birth_date=NULL, @GPA=NULL, @semester =NULL, @address =NULL, @faculty_code=NULL, @major_code =@majorcode, @company_name =NULL, @representative_name =NULL, @representative_email =NULL, @phone_number =NULL, @country_of_residence=NULL";
+
+                SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
+                sqlcomm.Parameters.AddWithValue("@role", usertype.SelectedItem.Value);
+                sqlcomm.Parameters.AddWithValue("@user", username.Text);
+                sqlcomm.Parameters.AddWithValue("@email", email.Text);
+                sqlcomm.Parameters.AddWithValue("@fname", fname.Text);
+                sqlcomm.Parameters.AddWithValue("@lname", lname.Text);
+                sqlcomm.Parameters.AddWithValue("@majorcode", majorcode.Text);
+
+
+                sqlconn.Open();
+                int i = sqlcomm.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    if (usertype.SelectedItem.Text == "Select")
+                        Response.Write("<script>alert('Please Select a User Type')</script>");
+                    else
+                        Response.Write("<script>alert('Registered Successfully.')</script>");
+                }
                 else
-                Response.Write("<script>alert('Registered Successfully')</script>"); 
+                {
+                    Response.Write("<script>alert('Failed to Register. Please make sure all your entered data is correct.')</script>");
+
+                }
+                sqlconn.Close();
             }
-            else
+            catch
             {
-                Response.Write("<script>alert('Failed to Register')</script>");
+                Response.Write("<script>alert('Failed to Register. Please make sure all your entered data is correct.')</script>");
 
             }
-            sqlconn.Close();
-
 
         }
 

@@ -59,6 +59,10 @@
                      <asp:Label runat="server" visible="true" ID="lnamelabel"><b>Last Name: </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" placeholder="Smith" visible="true" Enabled="true" name="lname" ID="lname" ></asp:TextBox><br /><br />
 
+                         
+                     <asp:Label runat="server" visible="true" ID="majorcodelabel"><b>Major Code: </b></asp:Label><br />
+                    <asp:TextBox runat="server" required="required" placeholder="123" visible="true" Enabled="true" name="majorcode" ID="majorcode" ></asp:TextBox><br /><br />
+
 
                           </asp:Panel>
 

@@ -114,6 +114,24 @@ namespace GIU
         protected global::System.Web.UI.WebControls.TextBox lname;
 
         /// <summary>
+        /// majorcodelabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label majorcodelabel;
+
+        /// <summary>
+        /// majorcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox majorcode;
+
+        /// <summary>
         /// submitreg control.
         /// </summary>
         /// <remarks>
