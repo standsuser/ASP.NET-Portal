@@ -89,20 +89,36 @@
 
                          
                      <asp:Label runat="server" visible="true" ID="gpalabel"><b>GPA: </b></asp:Label><br />
-                         <asp:TextBox ID="inputgpa"  required="required" placeholder="0.7" visible="true" Enabled="true" runat="server" TextMode="Number"></asp:TextBox>
+                         <asp:TextBox ID="inputgpa"  required="required" placeholder="0.7" visible="true" Enabled="true" runat="server"></asp:TextBox>
                          <br />   <br />
 
                   
                           </asp:Panel>
 
 
+                    <!--COMPANIES START-->
+                     <asp:Panel ID="companypanel" runat="server" Visible="false">
 
 
+                            <asp:Label runat="server" visible="true" ID="companynamelabel"><b>Company Name: </b></asp:Label><br />
+                    <asp:TextBox runat="server" required="required" placeholder="company" visible="true" Enabled="true" name="companyname" ID="companyname" ></asp:TextBox><br /><br />
 
+                     <asp:Label runat="server" visible="true" ID="representativenamelabel"><b>Representative Name: </b></asp:Label><br />
+                    <asp:TextBox runat="server" required="required" placeholder="John Smith" visible="true" Enabled="true" name="representativename" ID="representativename" ></asp:TextBox><br /><br />
 
+                         
+                     <asp:Label runat="server" visible="true" ID="representativeemaillabel"><b>Representative Email: </b></asp:Label><br />
+                    <asp:TextBox runat="server" required="required" placeholder="email@gmail.com" visible="true" Enabled="true" name="representativeemail" ID="representativeemail" TextMode="Email" ></asp:TextBox>
+                         <br />  <br />
 
+                     <asp:Label runat="server" visible="true" ID="companylocationlabel"><b>Company Location:: </b></asp:Label><br />
+                         <asp:TextBox ID="companylocation"  required="required" placeholder="area,city" visible="true" Enabled="true" runat="server"></asp:TextBox>
+                         <br />   <br />
 
+                          </asp:Panel>
 
+                    <!--LECTURER START AND END -->
+                    <!-- TA START-->
 
 
 
