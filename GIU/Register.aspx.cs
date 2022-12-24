@@ -120,7 +120,7 @@ namespace GIU
                         sqlconn.Close();
 
                 }
-                else if(usertype.SelectedItem.Text == "Lecturers" || usertype.SelectedItem.Text == "Teaching assistants") //LECTURERS AND TAS
+                else if(usertype.SelectedItem.Text == "Lecturers" || usertype.SelectedItem.Text == "Teaching assistants" || usertype.SelectedItem.Text == "External examiners" || usertype.SelectedItem.Text == "Coordinators") //LECTURERS ,TA, COORDINATOR, EXTERNALEXAMINER
                 {
                     string studentsqlquery = "EXEC UserRegister @usertype= @role , @username=@user, @email=@email,@first_name=NULL, @last_name=NULL, @birth_date=NULL, @GPA=NULL, @semester =NULL, @address =NULL, @faculty_code=NULL, @major_code =NULL, @company_name =NULL, @representative_name =NULL, @representative_email =NULL, @phone_number =@phonenumber, @country_of_residence=NULL";
 
