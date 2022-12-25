@@ -11,7 +11,9 @@
 <div class="col-lg-12">
 <section class="panel">
 <header class="panel-heading">
-<h2>Registration Form</h2>
+    <br />
+<h2>Student Home</h2>
+    <br />
 </header>
 
     <div class="panel-body">

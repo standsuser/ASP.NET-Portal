@@ -31,6 +31,8 @@ namespace GIU
 
                 string mainsqlquery = "EXEC UserLogin @email=@inputemail, @password=@inputpassword";
                 string helpersqlquery = "EXEC LoginHelper @email=@inputemail, @password=@inputpassword";
+                string gettypequery = "SELECT user_role FROM users WHERE users_id=@tmpid";
+
 
                 SqlCommand sqlcomm = new SqlCommand(mainsqlquery, sqlconn);
 
@@ -76,8 +78,22 @@ namespace GIU
                 helper.Parameters.Add("@tmp_id", SqlDbType.Int, 4).Direction = ParameterDirection.ReturnValue;
                 helper.ExecuteNonQuery();
                 int userid = Convert.ToInt32(helper.ExecuteScalar());
-
                 sqlconn.Close();
+
+
+
+                SqlCommand gettype = new SqlCommand(gettypequery, sqlconn);
+                sqlconn.Open();
+
+                gettype.Parameters.AddWithValue("@tmpid", userid);
+                gettype.ExecuteNonQuery();
+                String type = Convert.ToString(gettype.ExecuteScalar());
+
+                if (type == "Students")
+                {
+                    Response.Redirect("Student-Home.aspx");
+                }
+
             }
             catch
             {
