@@ -89,7 +89,7 @@ namespace GIU
                 gettype.ExecuteNonQuery();
                 String type = Convert.ToString(gettype.ExecuteScalar());
 
-                if (type == "Students")
+                if (id == 1 && type == "Students")
                 {
                     Response.Redirect("Student-Home.aspx");
                 }
