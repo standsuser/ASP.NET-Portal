@@ -55,6 +55,9 @@
                          <li><a runat="server" ID="regnav" Visible="true" href="~/Register">Register</a></li>
                         <li><a runat="server" ID="lognav" Visible="true" href="~/Login">Login</a></li>
                      <li><a runat="server" ID="sh" Visible="false" href="~/Student-Home">Student Home</a></li> 
+                    <li><a runat="server" ID="bp" Visible="false" href="~/View-BProjects">View Bachelor Projects</a></li> 
+                     <li><a runat="server" ID="profile" Visible="false" href="~/Profile">Profile</a></li> 
+
                     </ul>
                 </div>
             </div>

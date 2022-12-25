@@ -11,70 +11,61 @@ namespace GIU
 {
 
 
-    public partial class SiteMaster
+    public partial class View_BProjects
     {
 
         /// <summary>
-        /// homenav control.
+        /// bprojects control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor homenav;
+        protected global::System.Web.UI.WebControls.GridView bprojects;
 
         /// <summary>
-        /// regnav control.
+        /// userid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor regnav;
+        protected global::System.Web.UI.WebControls.Label userid;
 
         /// <summary>
-        /// lognav control.
+        /// userids control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lognav;
+        protected global::System.Web.UI.WebControls.TextBox userids;
 
         /// <summary>
-        /// sh control.
+        /// ptype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor sh;
+        protected global::System.Web.UI.WebControls.Label ptype;
 
         /// <summary>
-        /// bp control.
+        /// ptypes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor bp;
+        protected global::System.Web.UI.WebControls.DropDownList ptypes;
 
         /// <summary>
-        /// profile control.
+        /// submitreg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor profile;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button submitreg;
     }
 }

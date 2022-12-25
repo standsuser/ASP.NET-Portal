@@ -20,6 +20,8 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-1">
                 <div class="form-group">
+
+
                     <asp:Label runat="server" AssociatedControlID="txttempname"><b>Name</b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="BrandName" ID="txttempname" class="form-control input-group"></asp:TextBox><br />
                 </div>

@@ -13,6 +13,8 @@ namespace GIU
 {
     public partial class Login : System.Web.UI.Page
     {
+        public static int userid;
+        public static String type;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -77,7 +79,7 @@ namespace GIU
 
                 helper.Parameters.Add("@tmp_id", SqlDbType.Int, 4).Direction = ParameterDirection.ReturnValue;
                 helper.ExecuteNonQuery();
-                int userid = Convert.ToInt32(helper.ExecuteScalar());
+                 userid = Convert.ToInt32(helper.ExecuteScalar());
                 sqlconn.Close();
 
 
@@ -87,11 +89,12 @@ namespace GIU
 
                 gettype.Parameters.AddWithValue("@tmpid", userid);
                 gettype.ExecuteNonQuery();
-                String type = Convert.ToString(gettype.ExecuteScalar());
+                 type = Convert.ToString(gettype.ExecuteScalar());
 
                 if (id == 1 && type == "Students")
                 {
-                    Response.Redirect("Student-Home.aspx");
+                    Response.Redirect("Profile.aspx");
+
                 }
 
             }
