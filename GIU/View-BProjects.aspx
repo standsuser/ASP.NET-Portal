@@ -17,7 +17,7 @@
             <div class="col-md-4 col-md-offset-1">
                 <div class="form-group">
          
-                    <asp:GridView ID="bprojects" runat="server" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10" OnSelectedIndexChanged="bprojects_SelectedIndexChanged">
+                    <asp:GridView ID="bprojects" runat="server" Visible="true" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10" >
                     </asp:GridView>
          
 

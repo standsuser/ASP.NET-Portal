@@ -25,25 +25,40 @@ namespace GIU
 
 
             string viewbp = "EXEC ViewBachelorProjects @user_id= @userid, @project_type=@projecttype";
+            try
+            {
+                SqlCommand sqlcomm = new SqlCommand(viewbp, sqlconn);
 
-            SqlCommand sqlcomm = new SqlCommand(viewbp, sqlconn);
-            sqlcomm.Parameters.AddWithValue("@userid", userids.Text);
-            sqlcomm.Parameters.AddWithValue("@projecttype", ptypes.SelectedItem.Text);
+                if (String.Compare(userids.Text, "") == 0)
+                    sqlcomm.Parameters.AddWithValue("@userid", null);
+                else
+                sqlcomm.Parameters.AddWithValue("@userid", userids.Text);
 
-
-
-
-
-            sqlconn.Open();
-
-
-            sqlcomm.ExecuteNonQuery();
-            SqlDataReader reader = sqlcomm.ExecuteReader();
-            bprojects.DataSource = reader;
-            bprojects.DataBind();
+                if(String.Compare(ptypes.SelectedItem.Text,"select")==0)
+                    sqlcomm.Parameters.AddWithValue("@projecttype", null);
+                else
+                sqlcomm.Parameters.AddWithValue("@projecttype", ptypes.SelectedItem.Text);
 
 
-            sqlconn.Close();
+
+
+
+                sqlconn.Open();
+
+
+                sqlcomm.ExecuteNonQuery();
+                SqlDataReader reader = sqlcomm.ExecuteReader();
+                bprojects.DataSource = reader;
+                bprojects.DataBind();
+
+
+                sqlconn.Close();
+            }
+            catch
+            {
+                Response.Write("<script>alert('Failed to View Projects Please retry and doublecheck data entered.')</script>");
+
+            }
 
         }
 
