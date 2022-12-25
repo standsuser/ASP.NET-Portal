@@ -29,12 +29,12 @@ namespace GIU
             {
                 SqlCommand sqlcomm = new SqlCommand(viewbp, sqlconn);
 
-                if (String.Compare(userids.Text, "") == 0)
-                    sqlcomm.Parameters.AddWithValue("@userid", null);
-                else
+              //  if (string.Compare(userids.Text, "") == 0)
+              //      sqlcomm.Parameters.AddWithValue("@userid", null);
+             //   else
                 sqlcomm.Parameters.AddWithValue("@userid", userids.Text);
 
-                if(String.Compare(ptypes.SelectedItem.Text,"select")==0)
+                if(string.Compare(ptypes.SelectedItem.Text,"select")==0)
                     sqlcomm.Parameters.AddWithValue("@projecttype", null);
                 else
                 sqlcomm.Parameters.AddWithValue("@projecttype", ptypes.SelectedItem.Text);

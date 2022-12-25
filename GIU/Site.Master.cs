@@ -24,12 +24,12 @@ namespace GIU
             }
             if (string.Compare(Request.Url.LocalPath, "/Student-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/Student-Home") == 0|| string.Compare(Login.type, "Students") ==0)
             {
-                sh.Visible = true;
-                profile.Visible = true;
-                lognav.Visible = false;
-                regnav.Visible = false;
-                homenav.Visible = false;
-                bp.Visible = true;
+                sh.Visible = true;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
                
             }
 
