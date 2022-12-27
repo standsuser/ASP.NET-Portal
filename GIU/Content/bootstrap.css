@@ -1114,6 +1114,7 @@ figure {
 }
 img {
   vertical-align: middle;
+    margin-top: 0px;
 }
 .img-responsive,
 .thumbnail > img,
@@ -4351,7 +4352,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 49px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4672,6 +4673,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
+    width: 220px;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {

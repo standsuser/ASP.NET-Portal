@@ -23,21 +23,20 @@ namespace GIU
             string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-
             string viewbp = "EXEC ViewBachelorProjects @user_id= @userid, @project_type=@projecttype";
             try
             {
                 SqlCommand sqlcomm = new SqlCommand(viewbp, sqlconn);
 
-              //  if (string.Compare(userids.Text, "") == 0)
-              //      sqlcomm.Parameters.AddWithValue("@userid", null);
-             //   else
-                sqlcomm.Parameters.AddWithValue("@userid", userids.Text);
-
-                if(string.Compare(ptypes.SelectedItem.Text,"select")==0)
-                    sqlcomm.Parameters.AddWithValue("@projecttype", null);
+                if (String.Compare(userids.Text, "") == 0)
+                    sqlcomm.Parameters.AddWithValue("@userid", DBNull.Value);
                 else
-                sqlcomm.Parameters.AddWithValue("@projecttype", ptypes.SelectedItem.Text);
+                    sqlcomm.Parameters.AddWithValue("@userid", userids.Text);
+
+                if (String.Compare(ptypes.SelectedItem.Text, "select") == 0)
+                    sqlcomm.Parameters.AddWithValue("@projecttype", DBNull.Value);
+                else
+                    sqlcomm.Parameters.AddWithValue("@projecttype", ptypes.SelectedItem.Text);
 
 
 
