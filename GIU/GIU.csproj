@@ -105,11 +105,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Add-Employee.aspx" />
+    <Content Include="Company-Home.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Create-Local-Project.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -123,6 +126,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Make-Pref.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Student-Home.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -164,8 +168,29 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add-Employee.aspx.cs">
+      <DependentUpon>Add-Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add-Employee.aspx.designer.cs">
+      <DependentUpon>Add-Employee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Company-Home.aspx.cs">
+      <DependentUpon>Company-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company-Home.aspx.designer.cs">
+      <DependentUpon>Company-Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create-Local-Project.aspx.cs">
+      <DependentUpon>Create-Local-Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create-Local-Project.aspx.designer.cs">
+      <DependentUpon>Create-Local-Project.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,6 +207,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Make-Pref.aspx.cs">
+      <DependentUpon>Make-Pref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Make-Pref.aspx.designer.cs">
+      <DependentUpon>Make-Pref.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>

@@ -1,10 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Student-Home.aspx.cs" Inherits="GIU.Student_Home" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Company-Home.aspx.cs" Inherits="GIU.Company_Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
 
-
+    
 
     <section id="main-content">
         <section class="wrapper">
@@ -13,7 +12,7 @@
                     <section class="panel">
                         <header class="panel-heading">
                             <br />
-                            <h2>Student Home</h2>
+                            <h2>Company Home</h2>
                             <br />
                         </header>
 
@@ -23,8 +22,9 @@
                                     <div class="form-group">
 
 
-                                        <asp:Button ID="makepref" runat="server" OnClick="makepref_click" Text="Make Preferences" />
-                                        <asp:Button ID="Button1" runat="server" OnClick="makepref_click" Text="Make Preferences" />
+                                        <asp:Button ID="addemp" runat="server" OnClick="addemp_click" Text="Add Employee" Width="194px" />  <br />  <br />
+                                        <asp:Button ID="createproj" runat="server" OnClick="creatproj_click" Text="Create Local Project" />
+
 
                                         <br />
                                         <br />
@@ -42,5 +42,10 @@
             </div>
         </section>
     </section>
-</asp:Content>
 
+
+
+
+
+
+</asp:Content>

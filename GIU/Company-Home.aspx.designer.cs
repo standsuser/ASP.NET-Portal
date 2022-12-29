@@ -11,25 +11,25 @@ namespace GIU
 {
 
 
-    public partial class Student_Home
+    public partial class Company_Home
     {
 
         /// <summary>
-        /// makepref control.
+        /// addemp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button makepref;
+        protected global::System.Web.UI.WebControls.Button addemp;
 
         /// <summary>
-        /// Button1 control.
+        /// createproj control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button createproj;
     }
 }
