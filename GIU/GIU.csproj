@@ -130,6 +130,8 @@
     <Content Include="Create-Local-Project.aspx" />
     <Content Include="CreatingBP.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EEGradeDefense.aspx" />
+    <Content Include="EEGradeThesis.aspx" />
     <Content Include="EmpGradeDefense.aspx" />
     <Content Include="EmpProgressReport.aspx" />
     <Content Include="EmpThesisGrade.aspx" />
@@ -149,6 +151,7 @@
     <Content Include="GradeProgressReport.aspx" />
     <Content Include="Make-Pref.aspx" />
     <Content Include="Profile.aspx" />
+    <Content Include="ScheduleDef.aspx" />
     <Content Include="Student-Home.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -182,6 +185,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TAAddToDo.aspx" />
+    <Content Include="TACreatePR.aspx" />
     <Content Include="thesisGrade.aspx" />
     <Content Include="View-BProjects.aspx" />
     <Content Include="ViewRecLec.aspx" />
@@ -333,6 +338,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EEGradeDefense.aspx.cs">
+      <DependentUpon>EEGradeDefense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EEGradeDefense.aspx.designer.cs">
+      <DependentUpon>EEGradeDefense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EEGradeThesis.aspx.cs">
+      <DependentUpon>EEGradeThesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EEGradeThesis.aspx.designer.cs">
+      <DependentUpon>EEGradeThesis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmpGradeDefense.aspx.cs">
       <DependentUpon>EmpGradeDefense.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -400,6 +419,13 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ScheduleDef.aspx.cs">
+      <DependentUpon>ScheduleDef.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleDef.aspx.designer.cs">
+      <DependentUpon>ScheduleDef.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -420,6 +446,20 @@
     </Compile>
     <Compile Include="Student-Home.aspx.designer.cs">
       <DependentUpon>Student-Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TAAddToDo.aspx.cs">
+      <DependentUpon>TAAddToDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TAAddToDo.aspx.designer.cs">
+      <DependentUpon>TAAddToDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TACreatePR.aspx.cs">
+      <DependentUpon>TACreatePR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TACreatePR.aspx.designer.cs">
+      <DependentUpon>TACreatePR.aspx</DependentUpon>
     </Compile>
     <Compile Include="thesisGrade.aspx.cs">
       <DependentUpon>thesisGrade.aspx</DependentUpon>

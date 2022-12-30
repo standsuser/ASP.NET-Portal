@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="5d.aspx.cs" Inherits="GIU._5d" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TAAddToDo.aspx.cs" Inherits="GIU.TAAddToDo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -10,7 +10,7 @@
                         <header class="panel-heading">
                             <br />
                             <br />
-                            <h2>See Users</h2>
+                            <h2>Add To Do List to a Meeting</h2>
 
                         </header>
 
@@ -20,17 +20,13 @@
                                     <div class="form-group">
 
                                         <asp:Label runat="server" AssociatedControlID="m_id"><b>Meeting ID: </b></asp:Label><br />
-                                        <asp:TextBox runat="server" required="required" Enabled="true" name="m_id" ID="m_id" class="form-control input-group"></asp:TextBox><br />
+                                        <asp:TextBox runat="server" required="required" Enabled="true" name="Meeting ID" ID="m_id" class="form-control input-group"></asp:TextBox><br />
 
-                                        <asp:Label runat="server" AssociatedControlID="TDL"><b>TO-DO list code: </b></asp:Label><br />
-                                        <asp:TextBox runat="server" required="required" Enabled="true" name="TDL" ID="TDL" class="form-control input-group"></asp:TextBox><br />
-                                        </asp:TextBox><br />
+                                        <asp:Label runat="server" AssociatedControlID="tdl"><b>To Do List: </b></asp:Label><br />
+                                        <asp:TextBox runat="server" required="required" Enabled="true" name="to Do List" ID="tdl" class="form-control input-group"></asp:TextBox><br />
 
-
-
-
-
-                                        &nbsp;<asp:Button ID="okbutton" runat="server" OnClick=" LaddToDoList5d" Text="Accept" />
+                                  
+                                        &nbsp;<asp:Button ID="okbutton" runat="server" OnClick="AddTODO" Text="Accept" />
 
 
 
@@ -39,15 +35,10 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
                     </section>
                 </div>
             </div>
         </section>
     </section>
 </asp:Content>
+

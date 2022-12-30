@@ -10,7 +10,7 @@
                         <header class="panel-heading">
                             <br />
                             <br />
-                            <h2>See Users</h2>
+                            <h2>Assign TA to Project</h2>
 
                         </header>
 
@@ -30,7 +30,7 @@
 
                                         &nbsp;<asp:Button ID="okbutton" runat="server" OnClick="Assign_tas" Text="Accept" />
 
-                                       
+
 
                                     </div>
                                 </div>
@@ -50,4 +50,3 @@
     </section>
 </asp:Content>
 
-assign ta aspx
