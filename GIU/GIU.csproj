@@ -105,15 +105,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="5b.aspx" />
+    <Content Include="5c.aspx" />
+    <Content Include="5d.aspx" />
+    <Content Include="5e.aspx" />
+    <Content Include="5g.aspx" />
+    <Content Include="5h.aspx" />
+    <Content Include="5i.aspx" />
+    <Content Include="5j.aspx" />
+    <Content Include="5k.aspx" />
+    <Content Include="5l.aspx" />
     <Content Include="Add-Employee.aspx" />
+    <Content Include="AssignEE.aspx" />
+    <Content Include="assignEmp.aspx" />
+    <Content Include="AssignStudentToProject.aspx" />
+    <Content Include="AssignTAToProject.aspx" />
     <Content Include="Company-Home.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CoSeeAll.aspx" />
     <Content Include="Create-Local-Project.aspx" />
+    <Content Include="CreatingBP.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EmpGradeDefense.aspx" />
+    <Content Include="EmpProgressReport.aspx" />
+    <Content Include="EmpThesisGrade.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GIU_600x159.jpg" />
@@ -126,6 +145,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="GradeDefense.aspx" />
+    <Content Include="GradeProgressReport.aspx" />
     <Content Include="Make-Pref.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Student-Home.aspx" />
@@ -161,13 +182,85 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="thesisGrade.aspx" />
     <Content Include="View-BProjects.aspx" />
+    <Content Include="ViewRecLec.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="5b.aspx.cs">
+      <DependentUpon>5b.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5b.aspx.designer.cs">
+      <DependentUpon>5b.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5c.aspx.cs">
+      <DependentUpon>5c.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5c.aspx.designer.cs">
+      <DependentUpon>5c.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5d.aspx.cs">
+      <DependentUpon>5d.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5d.aspx.designer.cs">
+      <DependentUpon>5d.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5e.aspx.cs">
+      <DependentUpon>5e.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5e.aspx.designer.cs">
+      <DependentUpon>5e.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5g.aspx.cs">
+      <DependentUpon>5g.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5g.aspx.designer.cs">
+      <DependentUpon>5g.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5h.aspx.cs">
+      <DependentUpon>5h.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5h.aspx.designer.cs">
+      <DependentUpon>5h.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5i.aspx.cs">
+      <DependentUpon>5i.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5i.aspx.designer.cs">
+      <DependentUpon>5i.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5j.aspx.cs">
+      <DependentUpon>5j.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5j.aspx.designer.cs">
+      <DependentUpon>5j.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5k.aspx.cs">
+      <DependentUpon>5k.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5k.aspx.designer.cs">
+      <DependentUpon>5k.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5l.aspx.cs">
+      <DependentUpon>5l.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5l.aspx.designer.cs">
+      <DependentUpon>5l.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Add-Employee.aspx.cs">
       <DependentUpon>Add-Employee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,12 +270,47 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="AssignEE.aspx.cs">
+      <DependentUpon>AssignEE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignEE.aspx.designer.cs">
+      <DependentUpon>AssignEE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assignEmp.aspx.cs">
+      <DependentUpon>assignEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assignEmp.aspx.designer.cs">
+      <DependentUpon>assignEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignStudentToProject.aspx.cs">
+      <DependentUpon>AssignStudentToProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignStudentToProject.aspx.designer.cs">
+      <DependentUpon>AssignStudentToProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTAToProject.aspx.cs">
+      <DependentUpon>AssignTAToProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignTAToProject.aspx.designer.cs">
+      <DependentUpon>AssignTAToProject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Company-Home.aspx.cs">
       <DependentUpon>Company-Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Company-Home.aspx.designer.cs">
       <DependentUpon>Company-Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoSeeAll.aspx.cs">
+      <DependentUpon>CoSeeAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoSeeAll.aspx.designer.cs">
+      <DependentUpon>CoSeeAll.aspx</DependentUpon>
     </Compile>
     <Compile Include="Create-Local-Project.aspx.cs">
       <DependentUpon>Create-Local-Project.aspx</DependentUpon>
@@ -191,6 +319,13 @@
     <Compile Include="Create-Local-Project.aspx.designer.cs">
       <DependentUpon>Create-Local-Project.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CreatingBP.aspx.cs">
+      <DependentUpon>CreatingBP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreatingBP.aspx.designer.cs">
+      <DependentUpon>CreatingBP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -198,8 +333,43 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmpGradeDefense.aspx.cs">
+      <DependentUpon>EmpGradeDefense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpGradeDefense.aspx.designer.cs">
+      <DependentUpon>EmpGradeDefense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpProgressReport.aspx.cs">
+      <DependentUpon>EmpProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpProgressReport.aspx.designer.cs">
+      <DependentUpon>EmpProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpThesisGrade.aspx.cs">
+      <DependentUpon>EmpThesisGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpThesisGrade.aspx.designer.cs">
+      <DependentUpon>EmpThesisGrade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GradeDefense.aspx.cs">
+      <DependentUpon>GradeDefense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradeDefense.aspx.designer.cs">
+      <DependentUpon>GradeDefense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradeProgressReport.aspx.cs">
+      <DependentUpon>GradeProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradeProgressReport.aspx.designer.cs">
+      <DependentUpon>GradeProgressReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -251,12 +421,26 @@
     <Compile Include="Student-Home.aspx.designer.cs">
       <DependentUpon>Student-Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="thesisGrade.aspx.cs">
+      <DependentUpon>thesisGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thesisGrade.aspx.designer.cs">
+      <DependentUpon>thesisGrade.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View-BProjects.aspx.cs">
       <DependentUpon>View-BProjects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View-BProjects.aspx.designer.cs">
       <DependentUpon>View-BProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRecLec.aspx.cs">
+      <DependentUpon>ViewRecLec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewRecLec.aspx.designer.cs">
+      <DependentUpon>ViewRecLec.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
