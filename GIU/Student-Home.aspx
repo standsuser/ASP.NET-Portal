@@ -23,8 +23,9 @@
                                     <div class="form-group">
 
 
-                                        <asp:Button ID="makepref" runat="server" OnClick="makepref_click" Text="Make Preferences" />
-                                        <asp:Button ID="Button1" runat="server" OnClick="makepref_click" Text="Make Preferences" />
+                                        <asp:Button ID="makepref" runat="server" OnClick="makepref_click" Text="Make Preferences" Width="143px" /> <br /> <br />
+                                        <asp:Button ID="viewthesis" runat="server" OnClick="viewthesis_click" Text="View My Thesis" Width="143px" /><br /> <br />
+                                        <asp:Button ID="submitthesis" runat="server" OnClick="submitthesis_click" Text="Submit My Thesis" Width="143px" /><br /> <br />
 
                                         <br />
                                         <br />

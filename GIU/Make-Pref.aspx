@@ -4,7 +4,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <br /><br />
+<header class="panel-heading">
+      <br />
+<h2>Make Preferences</h2>
+
+</header>
 
 
     <asp:Label ID="sidlabel"  runat="server" > <b>Student ID:  </b></asp:Label><br />

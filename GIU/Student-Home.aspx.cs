@@ -19,5 +19,17 @@ namespace GIU
             Response.Redirect("Make-Pref.aspx");
 
         }
+
+        protected void viewthesis_click(object sender, EventArgs e)
+        {
+            Response.Redirect("View-My-Thesis.aspx");
+
+        }
+
+        protected void submitthesis_click(object sender, EventArgs e)
+        {
+            Response.Redirect("Submit-My-Thesis.aspx");
+
+        }
     }
 }

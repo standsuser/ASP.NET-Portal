@@ -185,10 +185,12 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Submit-My-Thesis.aspx" />
     <Content Include="TAAddToDo.aspx" />
     <Content Include="TACreatePR.aspx" />
     <Content Include="thesisGrade.aspx" />
     <Content Include="View-BProjects.aspx" />
+    <Content Include="View-My-Thesis.aspx" />
     <Content Include="ViewRecLec.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -447,6 +449,13 @@
     <Compile Include="Student-Home.aspx.designer.cs">
       <DependentUpon>Student-Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Submit-My-Thesis.aspx.cs">
+      <DependentUpon>Submit-My-Thesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Submit-My-Thesis.aspx.designer.cs">
+      <DependentUpon>Submit-My-Thesis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TAAddToDo.aspx.cs">
       <DependentUpon>TAAddToDo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -474,6 +483,13 @@
     </Compile>
     <Compile Include="View-BProjects.aspx.designer.cs">
       <DependentUpon>View-BProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View-My-Thesis.aspx.cs">
+      <DependentUpon>View-My-Thesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View-My-Thesis.aspx.designer.cs">
+      <DependentUpon>View-My-Thesis.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewRecLec.aspx.cs">
       <DependentUpon>ViewRecLec.aspx</DependentUpon>
