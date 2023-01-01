@@ -120,6 +120,7 @@
     <Content Include="assignEmp.aspx" />
     <Content Include="AssignStudentToProject.aspx" />
     <Content Include="AssignTAToProject.aspx" />
+    <Content Include="Book-Meeting.aspx" />
     <Content Include="Company-Home.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -309,6 +310,13 @@
     </Compile>
     <Compile Include="AssignTAToProject.aspx.designer.cs">
       <DependentUpon>AssignTAToProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book-Meeting.aspx.cs">
+      <DependentUpon>Book-Meeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book-Meeting.aspx.designer.cs">
+      <DependentUpon>Book-Meeting.aspx</DependentUpon>
     </Compile>
     <Compile Include="Company-Home.aspx.cs">
       <DependentUpon>Company-Home.aspx</DependentUpon>

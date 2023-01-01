@@ -61,5 +61,11 @@ namespace GIU
             Response.Redirect("View-Unbooked.aspx");
 
         }
+
+        protected void book_click(object sender, EventArgs e)
+        {
+            Response.Redirect("Book-Meeting.aspx");
+
+        }
     }
 }
