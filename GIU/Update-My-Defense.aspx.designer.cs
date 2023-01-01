@@ -11,53 +11,44 @@ namespace GIU
 {
 
 
-    public partial class Student_Home
+    public partial class Update_My_Defense
     {
 
         /// <summary>
-        /// makepref control.
+        /// studentidlabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button makepref;
+        protected global::System.Web.UI.WebControls.Label studentidlabel;
 
         /// <summary>
-        /// viewthesis control.
+        /// studentidbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewthesis;
+        protected global::System.Web.UI.WebControls.TextBox studentidbox;
 
         /// <summary>
-        /// submitthesis control.
+        /// contentlabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitthesis;
+        protected global::System.Web.UI.WebControls.Label contentlabel;
 
         /// <summary>
-        /// viewpr control.
+        /// contentbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewpr;
-
-        /// <summary>
-        /// viewdefense control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewdefense;
+        protected global::System.Web.UI.WebControls.TextBox contentbox;
 
         /// <summary>
         /// updatedefense control.

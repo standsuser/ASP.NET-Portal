@@ -43,5 +43,11 @@ namespace GIU
             Response.Redirect("View-My-Defense.aspx");
 
         }
+
+        protected void updatedefense_click(object sender, EventArgs e)
+        {
+            Response.Redirect("Update-My-Defense.aspx");
+
+        }
     }
 }

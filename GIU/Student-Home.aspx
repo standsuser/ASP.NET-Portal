@@ -28,6 +28,7 @@
                                         <asp:Button ID="submitthesis" runat="server" OnClick="submitthesis_click" Text="Submit My Thesis" Width="174px" /><br /> <br />
                                         <asp:Button ID="viewpr" runat="server" OnClick="viewpr_click" Text="View My Progress Reports" Width="174px" /><br /> <br />
                                         <asp:Button ID="viewdefense" runat="server" OnClick="viewdefense_click" Text="View My Defense" Width="174px" /><br /> <br />
+                                        <asp:Button ID="updatedefense" runat="server" OnClick="updatedefense_click" Text="Update My Defense" Width="174px" /><br /> <br />
 
 
                                         <br />

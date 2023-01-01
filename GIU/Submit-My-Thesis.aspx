@@ -22,7 +22,7 @@
 
 
                      <asp:Label runat="server" ID="studentidlabel"><b>Student ID: </b></asp:Label><br />
-                    <asp:TextBox runat="server"  Enabled="true" name="studentid" ID="studentidbox"></asp:TextBox><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" name="studentid" ID="studentidbox"></asp:TextBox><br />
 
 
                     <asp:Label runat="server" ID="titlelabel"><b>Thesis Title: </b></asp:Label><br />
@@ -42,14 +42,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
 
 
     
