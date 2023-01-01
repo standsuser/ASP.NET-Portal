@@ -23,12 +23,13 @@
                                     <div class="form-group">
 
 
-                                        <asp:Button ID="makepref" runat="server" OnClick="makepref_click" Text="Make Preferences" Width="174px" /> <br /> <br />
-                                        <asp:Button ID="viewthesis" runat="server" OnClick="viewthesis_click" Text="View My Thesis" Width="174px" /><br /> <br />
-                                        <asp:Button ID="submitthesis" runat="server" OnClick="submitthesis_click" Text="Submit My Thesis" Width="174px" /><br /> <br />
-                                        <asp:Button ID="viewpr" runat="server" OnClick="viewpr_click" Text="View My Progress Reports" Width="174px" /><br /> <br />
-                                        <asp:Button ID="viewdefense" runat="server" OnClick="viewdefense_click" Text="View My Defense" Width="174px" /><br /> <br />
-                                        <asp:Button ID="updatedefense" runat="server" OnClick="updatedefense_click" Text="Update My Defense" Width="174px" /><br /> <br />
+                                        <asp:Button ID="makepref" runat="server" OnClick="makepref_click" Text="Make Preferences" Width="196px" /> <br /> <br />
+                                        <asp:Button ID="viewthesis" runat="server" OnClick="viewthesis_click" Text="View My Thesis" Width="196px" /><br /> <br />
+                                        <asp:Button ID="submitthesis" runat="server" OnClick="submitthesis_click" Text="Submit My Thesis" Width="196px" /><br /> <br />
+                                        <asp:Button ID="viewpr" runat="server" OnClick="viewpr_click" Text="View My Progress Reports"  Width="196px" /><br /> <br />
+                                        <asp:Button ID="viewdefense" runat="server" OnClick="viewdefense_click" Text="View My Defense"  Width="196px" /><br /> <br />
+                                        <asp:Button ID="updatedefense" runat="server" OnClick="updatedefense_click" Text="Update My Defense"  Width="196px" /><br /> <br />
+                                        <asp:Button ID="viewbpgrade" runat="server" OnClick="viewbpgrade_click" Text="View Bachelor Project Grade" Width="196px" /><br /> <br />
 
 
                                         <br />

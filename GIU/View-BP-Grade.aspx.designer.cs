@@ -11,62 +11,35 @@ namespace GIU
 {
 
 
-    public partial class Student_Home
+    public partial class View_BP_Grade
     {
 
         /// <summary>
-        /// makepref control.
+        /// bpgrade control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button makepref;
+        protected global::System.Web.UI.WebControls.GridView bpgrade;
 
         /// <summary>
-        /// viewthesis control.
+        /// studentidlabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewthesis;
+        protected global::System.Web.UI.WebControls.Label studentidlabel;
 
         /// <summary>
-        /// submitthesis control.
+        /// studentidbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitthesis;
-
-        /// <summary>
-        /// viewpr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewpr;
-
-        /// <summary>
-        /// viewdefense control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button viewdefense;
-
-        /// <summary>
-        /// updatedefense control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button updatedefense;
+        protected global::System.Web.UI.WebControls.TextBox studentidbox;
 
         /// <summary>
         /// viewbpgrade control.

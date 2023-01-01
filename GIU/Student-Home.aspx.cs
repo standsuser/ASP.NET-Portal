@@ -49,5 +49,11 @@ namespace GIU
             Response.Redirect("Update-My-Defense.aspx");
 
         }
+
+        protected void viewbpgrade_click(object sender, EventArgs e)
+        {
+            Response.Redirect("View-BP-Grade.aspx");
+
+        }
     }
 }
