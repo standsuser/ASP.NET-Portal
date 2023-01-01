@@ -195,6 +195,7 @@
     <Content Include="View-My-Defense.aspx" />
     <Content Include="View-My-PR.aspx" />
     <Content Include="View-My-Thesis.aspx" />
+    <Content Include="View-Unbooked.aspx" />
     <Content Include="ViewRecLec.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -522,6 +523,13 @@
     </Compile>
     <Compile Include="View-My-Thesis.aspx.designer.cs">
       <DependentUpon>View-My-Thesis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View-Unbooked.aspx.cs">
+      <DependentUpon>View-Unbooked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View-Unbooked.aspx.designer.cs">
+      <DependentUpon>View-Unbooked.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewRecLec.aspx.cs">
       <DependentUpon>ViewRecLec.aspx</DependentUpon>

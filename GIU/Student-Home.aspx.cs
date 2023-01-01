@@ -55,5 +55,11 @@ namespace GIU
             Response.Redirect("View-BP-Grade.aspx");
 
         }
+
+        protected void viewnotbooked_click(object sender, EventArgs e)
+        {
+            Response.Redirect("View-Unbooked.aspx");
+
+        }
     }
 }
