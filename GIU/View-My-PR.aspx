@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="View-My-Thesis.aspx.cs" Inherits="GIU.View_My_Thesis" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="View-My-PR.aspx.cs" Inherits="GIU.View_My_PR" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
 
 
 
@@ -10,7 +11,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>View My Thesis</h2>
+<h2>View My Progress Reports</h2>
 
 </header>
 
@@ -19,7 +20,7 @@
             <div class="col-md-4 col-md-offset-1">
                 <div class="form-group">
          
-                    <asp:GridView ID="mythesis" runat="server" Visible="true" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10" >
+                    <asp:GridView ID="PR" runat="server" Visible="true" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10" >
                     </asp:GridView>
          
 
@@ -28,12 +29,12 @@
                     <asp:TextBox runat="server"  Enabled="true" name="studentid" ID="studentidbox"></asp:TextBox><br />
 
 
-                    <asp:Label runat="server" ID="titlelabel"><b>Thesis Title: </b></asp:Label><br />
-                    <asp:TextBox runat="server"  Enabled="true" name="title" ID="titlebox"></asp:TextBox><br /><br />
+                    <asp:Label runat="server" ID="datelabel"><b>Date: </b></asp:Label><br />
+                    <asp:TextBox runat="server" Placeholder="m/d/yyyy" Enabled="true" name="date" ID="datebox" ></asp:TextBox><br /><br />
 
                     
          
-                                         &nbsp;<asp:Button ID="viewthesis" runat="server" OnClick="Button1_Click" Text="View" />
+                     &nbsp;<asp:Button ID="viewPR" runat="server" OnClick="Button1_Click" Text="View" />
 
 
                 </div>

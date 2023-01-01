@@ -31,5 +31,11 @@ namespace GIU
             Response.Redirect("Submit-My-Thesis.aspx");
 
         }
+
+        protected void viewpr_click(object sender, EventArgs e)
+        {
+            Response.Redirect("View-My-PR.aspx");
+
+        }
     }
 }
