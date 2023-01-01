@@ -8,7 +8,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>View Unbooked Meetings</h2>
+<h2>Book A Meeting</h2>
 
 </header>
     <br /><br />
