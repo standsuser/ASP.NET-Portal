@@ -190,6 +190,7 @@
     <Content Include="TACreatePR.aspx" />
     <Content Include="thesisGrade.aspx" />
     <Content Include="View-BProjects.aspx" />
+    <Content Include="View-My-Defense.aspx" />
     <Content Include="View-My-PR.aspx" />
     <Content Include="View-My-Thesis.aspx" />
     <Content Include="ViewRecLec.aspx" />
@@ -484,6 +485,13 @@
     </Compile>
     <Compile Include="View-BProjects.aspx.designer.cs">
       <DependentUpon>View-BProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View-My-Defense.aspx.cs">
+      <DependentUpon>View-My-Defense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View-My-Defense.aspx.designer.cs">
+      <DependentUpon>View-My-Defense.aspx</DependentUpon>
     </Compile>
     <Compile Include="View-My-PR.aspx.cs">
       <DependentUpon>View-My-PR.aspx</DependentUpon>

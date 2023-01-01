@@ -37,5 +37,11 @@ namespace GIU
             Response.Redirect("View-My-PR.aspx");
 
         }
+
+        protected void viewdefense_click(object sender, EventArgs e)
+        {
+            Response.Redirect("View-My-Defense.aspx");
+
+        }
     }
 }
