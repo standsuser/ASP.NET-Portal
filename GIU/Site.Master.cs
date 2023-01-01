@@ -19,6 +19,8 @@ namespace GIU
                 regnav.Visible = true;
                 homenav.Visible = true;
                 bp.Visible = false;
+                companyhome.Visible = false;// company home
+
 
 
             }
@@ -30,7 +32,21 @@ namespace GIU
                 regnav.Visible = false;//registerpage
                 homenav.Visible = false; //main old page
                 bp.Visible = true; //view bachelor projects
-               
+                companyhome.Visible = false;// company home
+
+
+            }
+            if (string.Compare(Request.Url.LocalPath, "/Company-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/Company-Home") == 0 || string.Compare(Login.type, "Companies") == 0)
+            {
+                sh.Visible = false;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
+                companyhome.Visible = true; // company home
+
+
             }
 
         }

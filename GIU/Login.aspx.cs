@@ -96,6 +96,11 @@ namespace GIU
                     Response.Redirect("Profile.aspx");
 
                 }
+                else if(id==1 && type == "Companies")
+                {
+                    Response.Redirect("Profile.aspx");
+
+                }
 
             }
             catch

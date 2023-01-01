@@ -1,7 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add-Employee.aspx.cs" Inherits="GIU.Add_Employee" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-            <br />            <br />            <br />
+        <section id="main-content">
+<section class="wrapper">
+<div class="row">
+<div class="col-lg-12">
+<section class="panel">
+<header class="panel-heading">
+      <br /><br />
+<h2>Employee Peogress Report</h2>
+
+</header>
                     <asp:GridView ID="employeegenerated" runat="server" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10">
 
 

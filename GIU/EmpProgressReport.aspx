@@ -8,7 +8,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>Employee Peogress Report</h2>
+<h2>Employee Progress Report</h2>
 
 </header>
 

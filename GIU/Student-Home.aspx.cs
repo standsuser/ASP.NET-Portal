@@ -73,5 +73,10 @@ namespace GIU
             Response.Redirect("View-Meeting.aspx");
 
         }
+
+        protected void todo_click(object sender, EventArgs e)
+        {
+            Response.Redirect("Student-AddToDo.aspx");
+        }
     }
 }

@@ -22,8 +22,8 @@
                                     <div class="form-group">
 
 
-                                        <asp:Button ID="addemp" runat="server" OnClick="addemp_click" Text="Add Employee" Width="194px" />  <br />  <br />
-                                        <asp:Button ID="createproj" runat="server" OnClick="creatproj_click" Text="Create Local Project" />
+                                        <asp:Button ID="addemp" runat="server" OnClick="addemp_click" Text="Add Employee" Width="196px" />  <br />  <br />
+                                        <asp:Button ID="createproj" runat="server" OnClick="creatproj_click" Text="Create Local Project" Width="196px" />
 
 
                                         <br />

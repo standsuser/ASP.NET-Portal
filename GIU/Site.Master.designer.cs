@@ -51,6 +51,15 @@ namespace GIU
         protected global::System.Web.UI.HtmlControls.HtmlAnchor lognav;
 
         /// <summary>
+        /// companyhome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor companyhome;
+
+        /// <summary>
         /// sh control.
         /// </summary>
         /// <remarks>

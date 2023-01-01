@@ -153,6 +153,7 @@
     <Content Include="Make-Pref.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="ScheduleDef.aspx" />
+    <Content Include="Student-AddToDo.aspx" />
     <Content Include="Student-Home.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -455,6 +456,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student-AddToDo.aspx.cs">
+      <DependentUpon>Student-AddToDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student-AddToDo.aspx.designer.cs">
+      <DependentUpon>Student-AddToDo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student-Home.aspx.cs">
       <DependentUpon>Student-Home.aspx</DependentUpon>
