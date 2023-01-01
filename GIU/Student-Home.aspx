@@ -32,6 +32,7 @@
                                         <asp:Button ID="viewbpgrade" runat="server" OnClick="viewbpgrade_click" Text="View Bachelor Project Grade" Width="196px" /><br /> <br />
                                         <asp:Button ID="viewnotbooked" runat="server" OnClick="viewnotbooked_click" Text="View Unbooked Meetings" Width="196px" /><br /> <br />
                                         <asp:Button ID="book" runat="server" OnClick="book_click" Text="Book Meeting" Width="196px" /><br /> <br />
+                                        <asp:Button ID="viewbooked" runat="server" OnClick="viewbook_click" Text="View Booked Meeting" Width="196px" /><br /> <br />
 
 
                                         <br />

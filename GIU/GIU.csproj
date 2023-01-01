@@ -193,6 +193,7 @@
     <Content Include="Update-My-Defense.aspx" />
     <Content Include="View-BP-Grade.aspx" />
     <Content Include="View-BProjects.aspx" />
+    <Content Include="View-Meeting.aspx" />
     <Content Include="View-My-Defense.aspx" />
     <Content Include="View-My-PR.aspx" />
     <Content Include="View-My-Thesis.aspx" />
@@ -510,6 +511,13 @@
     </Compile>
     <Compile Include="View-BProjects.aspx.designer.cs">
       <DependentUpon>View-BProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View-Meeting.aspx.cs">
+      <DependentUpon>View-Meeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View-Meeting.aspx.designer.cs">
+      <DependentUpon>View-Meeting.aspx</DependentUpon>
     </Compile>
     <Compile Include="View-My-Defense.aspx.cs">
       <DependentUpon>View-My-Defense.aspx</DependentUpon>

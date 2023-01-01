@@ -67,5 +67,11 @@ namespace GIU
             Response.Redirect("Book-Meeting.aspx");
 
         }
+
+        protected void viewbook_click(object sender, EventArgs e)
+        {
+            Response.Redirect("View-Meeting.aspx");
+
+        }
     }
 }
