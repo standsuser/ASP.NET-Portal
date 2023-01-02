@@ -25,8 +25,8 @@ namespace GIU
                 string maincommand = "Exec LecturerAddToDo @meeting_id = @m_id, @to_do_list= @TDL ";
 
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
-                comm.Parameters.AddWithValue(" @m_id", m_id.Text);
-                comm.Parameters.AddWithValue(" @TDL", @TDL.Text);
+                comm.Parameters.AddWithValue("@m_id", m_id.Text);
+                comm.Parameters.AddWithValue("@TDL", @TDL.Text);
 
 
 
@@ -34,27 +34,16 @@ namespace GIU
 
                 comm.ExecuteNonQuery();
 
+                    Response.Write("<script>alert('Added To-Do List Succesfully!')</script>");
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
 
-
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
-
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
-
-                }
 
 
                 sqlconn.Close();
             }
             catch
             {
-                Response.Write("<script>alert('error!')</script>");
+                Response.Write("<script>alert('Todo list addition failed. Please check your information.')</script>");
 
 
             }

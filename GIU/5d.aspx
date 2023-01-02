@@ -10,7 +10,7 @@
                         <header class="panel-heading">
                             <br />
                             <br />
-                            <h2>See Users</h2>
+                            <h2>Add to Meeting To-Do Lists</h2>
 
                         </header>
 
@@ -22,9 +22,9 @@
                                         <asp:Label runat="server" AssociatedControlID="m_id"><b>Meeting ID: </b></asp:Label><br />
                                         <asp:TextBox runat="server" required="required" Enabled="true" name="m_id" ID="m_id" class="form-control input-group"></asp:TextBox><br />
 
-                                        <asp:Label runat="server" AssociatedControlID="TDL"><b>TO-DO list code: </b></asp:Label><br />
+                                        <asp:Label runat="server" AssociatedControlID="TDL"><b>TO-DO list: </b></asp:Label><br />
                                         <asp:TextBox runat="server" required="required" Enabled="true" name="TDL" ID="TDL" class="form-control input-group"></asp:TextBox><br />
-                                        </asp:TextBox><br />
+                                       
 
 
 
