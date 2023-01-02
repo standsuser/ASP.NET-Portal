@@ -30,28 +30,23 @@ namespace GIU
                 sqlconn.Open();
 
                 comm.ExecuteNonQuery();
-               
-                int id = Convert.ToInt32(comm.ExecuteScalar());
+          
+                SqlDataReader reader = comm.ExecuteReader();
+                assigndetails.DataSource = reader;
+                assigndetails.DataBind();
 
 
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Student Assigning Succesful!')</script>");
+                Response.Write("<script>alert('Student Assigning Succesful!')</script>");
 
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Failed to Assign Students. Please check your information.')</script>");
-
-                }
+                
 
 
                 sqlconn.Close();
             }
             catch
             {
-                Response.Write("<script>alert('Failed to make preference. Please check your information.')</script>");
+                Response.Write("<script>alert('Failed to Assign Employee. Please check your information.')</script>");
 
 
             }

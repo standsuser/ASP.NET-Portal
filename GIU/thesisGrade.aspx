@@ -17,10 +17,10 @@
             <div class="col-md-4 col-md-offset-1">
                 <div class="form-group">
 
-                    <asp:Label runat="server" AssociatedControlID="c_cid"><b>Enter company Code </b></asp:Label><br />
+                    <asp:Label runat="server" AssociatedControlID="c_cid"><b>Enter company ID </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="c_cid" ID="c_cid" class="form-control input-group"></asp:TextBox><br />
                    
-                    <asp:Label runat="server" AssociatedControlID="s_id"><b>Enter Staff Id </b></asp:Label><br />
+                    <asp:Label runat="server" AssociatedControlID="s_id"><b>Enter Student ID </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="s_id" ID="s_id" class="form-control input-group"></asp:TextBox><br />
                     
                     <asp:Label runat="server" AssociatedControlID="t_title"><b> Enter Thesis Title </b></asp:Label><br />

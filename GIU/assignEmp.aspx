@@ -18,6 +18,9 @@
             <div class="col-md-4 col-md-offset-1">
                 <div class="form-group">
 
+
+                                        <asp:GridView ID="assigndetails" runat="server" Visible="true" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10" >
+                    </asp:GridView>
                     <asp:Label runat="server" AssociatedControlID="b_code"><b>Enter Bachelor Code </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="b_code" ID="b_code" class="form-control input-group"></asp:TextBox><br />
                    
