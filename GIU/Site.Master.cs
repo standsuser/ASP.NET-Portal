@@ -22,6 +22,7 @@ namespace GIU
                 companyhome.Visible = false;// company home
                 lecturerhome.Visible = false; //lecturer home
                 employeehome.Visible = false; //employee home
+                coordinatorhome.Visible = false; //coordinatorhome
 
 
 
@@ -37,6 +38,7 @@ namespace GIU
                 companyhome.Visible = false;// company home
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = false; //lecturer home
+                coordinatorhome.Visible = false; //coordinatorhome
 
 
             }
@@ -51,6 +53,7 @@ namespace GIU
                 companyhome.Visible = true; // company home
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = false; //lecturer home
+                coordinatorhome.Visible = false; //coordinatorhome
 
 
             }
@@ -65,6 +68,7 @@ namespace GIU
                 companyhome.Visible = false; // company home
                 employeehome.Visible = true; //employee home
                 lecturerhome.Visible = false; //lecturer home
+                coordinatorhome.Visible = false; //coordinatorhome
 
 
             }
@@ -79,6 +83,22 @@ namespace GIU
                 companyhome.Visible = false; // company home
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = true; //lecturer home
+                coordinatorhome.Visible = false; //coordinatorhome
+
+
+            }
+            if (string.Compare(Request.Url.LocalPath, "/Coordinator-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/Coordinator-Home") == 0 || string.Compare(Login.type, "Coordinators") == 0)
+            {
+                sh.Visible = false;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
+                companyhome.Visible = false; // company home
+                employeehome.Visible = false; //employee home
+                lecturerhome.Visible = false; //lecturer home
+                coordinatorhome.Visible = true; //coordinatorhome
 
 
             }

@@ -31,19 +31,12 @@ namespace GIU
                 Students_grid.DataSource = reader;
                 Students_grid.DataBind();
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
 
-
-                if (id == 1)
-                {
+              
                     Response.Write("<script>alert('Student Assigning Succesful!')</script>");
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Failed to Assign Students. Please check your information.')</script>");
-
-                }
+                
+            
 
 
                 sqlconn.Close();

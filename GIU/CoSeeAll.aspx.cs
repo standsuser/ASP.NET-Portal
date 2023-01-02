@@ -21,23 +21,31 @@ namespace GIU
 
         protected void see_All(object sender, EventArgs e)
         {
-            string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
-            SqlConnection sqlconn = new SqlConnection(mainconn);
-            string maincommand = "Exec ViewUsers @User_type = @usertype, @User_id = @userid";
+            try
+            {
+                string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
+                SqlConnection sqlconn = new SqlConnection(mainconn);
+                string maincommand = "Exec ViewUsers @User_type = @usertype, @User_id = @userid";
 
-            SqlCommand comm = new SqlCommand(maincommand, sqlconn);
-            comm.Parameters.AddWithValue("@userid", userident.Text);
-            comm.Parameters.AddWithValue("@usertype", userType.Text);
+                SqlCommand comm = new SqlCommand(maincommand, sqlconn);
+                comm.Parameters.AddWithValue("@userid", userident.Text);
+                comm.Parameters.AddWithValue("@usertype", userType.Text);
 
-            sqlconn.Open();
+                sqlconn.Open();
 
-            comm.ExecuteNonQuery();
-            SqlDataReader reader = comm.ExecuteReader();
-            Users_grid.DataSource = reader;
-            Users_grid.DataBind();
+                comm.ExecuteNonQuery();
+                SqlDataReader reader = comm.ExecuteReader();
+                Users_grid.DataSource = reader;
+                Users_grid.DataBind();
 
 
-            sqlconn.Close();
+                sqlconn.Close();
+            }
+            catch
+            {
+                Response.Write("<script>alert('Failed to View. Please Check Your Information')</script>");
+
+            }
 
 
         }

@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Coordinator-Home.aspx" />
     <Content Include="CoSeeAll.aspx" />
     <Content Include="Create-Local-Project.aspx" />
     <Content Include="CreatingBP.aspx" />
@@ -336,6 +337,13 @@
     </Compile>
     <Compile Include="Company-Home.aspx.designer.cs">
       <DependentUpon>Company-Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coordinator-Home.aspx.cs">
+      <DependentUpon>Coordinator-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coordinator-Home.aspx.designer.cs">
+      <DependentUpon>Coordinator-Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="CoSeeAll.aspx.cs">
       <DependentUpon>CoSeeAll.aspx</DependentUpon>
