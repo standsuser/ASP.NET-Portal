@@ -79,5 +79,11 @@ namespace GIU
             Response.Redirect("5k.aspx");
 
         }
+
+        protected void gradePR_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5l.aspx");
+
+        }
     }
 }

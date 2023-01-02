@@ -10,7 +10,7 @@
                     <section class="panel">
                         <header class="panel-heading">
                             <br />
-                            <h2>Company Home</h2>
+                            <h2>Lecturer Home</h2>
                             <br />
                         </header>
 
