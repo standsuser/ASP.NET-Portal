@@ -29,5 +29,28 @@ namespace GIU
 
 
         }
+
+        protected void assignemp_click(object sender, EventArgs e)
+        {
+            Response.Redirect("assignEmp.aspx");
+
+        }
+
+        protected void thesis_click(object sender, EventArgs e)
+        {
+            Response.Redirect("thesisGrade.aspx");
+        }
+
+        protected void defense_click(object sender, EventArgs e)
+        {
+            Response.Redirect("GradeDefense.aspx");
+
+        }
+
+        protected void pr_click(object sender, EventArgs e)
+        {
+            Response.Redirect("GradeProgressReport.aspx");
+
+        }
     }
 }

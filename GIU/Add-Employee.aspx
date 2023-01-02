@@ -5,10 +5,9 @@
 <section class="wrapper">
 <div class="row">
 <div class="col-lg-12">
-<section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>Employee Peogress Report</h2>
+<h2>Add Employee</h2>
 
 </header>
                     <asp:GridView ID="employeegenerated" runat="server" BackColor="#CCCCCC" BorderColor="#666666" BorderWidth="2px" CellSpacing="10">
@@ -42,6 +41,19 @@
 
         <asp:Button ID="addemp" runat="server" Text="Add" OnClick="addemp_Click" /><br /><br />
 
-    
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+</section>
+
+</section>
+
 
 </asp:Content>

@@ -21,10 +21,11 @@ namespace GIU
         protected void addemp_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
+                SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
-            SqlConnection sqlconn = new SqlConnection(mainconn);
-           
                 string addempquery = "EXEC AddEmployee @CompanyID=@cid, @email=@mail, @name=@empname, @phone_number=@phonenum, @field=@empfield";
 
 
@@ -41,7 +42,7 @@ namespace GIU
 
                 sqlconn.Open();
 
-             
+
                 SqlDataReader reader = sqlcomm.ExecuteReader();
                 employeegenerated.DataSource = reader;
                 employeegenerated.DataBind();
@@ -49,9 +50,14 @@ namespace GIU
 
                 sqlconn.Close();
 
-
+            }
+            catch
+            {
+                Response.Write("<script>alert('Failed to Add. Recheck Data Entered.')</script>");
 
             }
+
+        }
         
 
 
