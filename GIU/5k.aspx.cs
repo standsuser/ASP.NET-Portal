@@ -18,16 +18,15 @@ namespace GIU
         }
         protected void LecCreatePR5k(object sender, EventArgs e)
         {
-            try
-            {
+ 
                 string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
-                string maincommand = "Exec  LecCreatePR @Lecturer_id = @L_id,    @sid = @s_id ,    @date = @d,   @contnet = @c ";
+                string maincommand = "Exec  LecCreatePR @Lecturer_id = @L_id,    @sid = @s_id ,    @date = @d,   @content = @c ";
 
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
                 comm.Parameters.AddWithValue("@L_id", L_id.Text);
                 comm.Parameters.AddWithValue("@s_id", s_id.Text);
-                comm.Parameters.AddWithValue("@d", d.Text);
+                comm.Parameters.AddWithValue("@d", Convert.ToDateTime(d.Text));
                 comm.Parameters.AddWithValue("@c", c.Text);
                
 
@@ -37,29 +36,13 @@ namespace GIU
                 comm.ExecuteNonQuery();
 
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
+            
+                    Response.Write("<script>alert('Progress Report created Succesfully!')</script>");
 
-
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
-
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
-
-                }
 
 
                 sqlconn.Close();
-            }
-            catch
-            {
-                Response.Write("<script>alert('error!')</script>");
 
-
-            }
 
 
         }

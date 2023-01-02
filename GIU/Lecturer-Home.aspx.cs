@@ -61,5 +61,23 @@ namespace GIU
             Response.Redirect("5h.aspx");
 
         }
+
+        protected void gradethesis_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5i.aspx");
+
+        }
+
+        protected void gradedefense_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5j.aspx");
+
+        }
+
+        protected void createPR_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5k.aspx");
+
+        }
     }
 }

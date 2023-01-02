@@ -26,7 +26,7 @@ namespace GIU
 
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
                 comm.Parameters.AddWithValue("@L_id", L_id.Text);
-                comm.Parameters.AddWithValue("@ @s_id", @s_id.Text);
+                comm.Parameters.AddWithValue("@s_id", @s_id.Text);
                 comm.Parameters.AddWithValue("@DL", DL.Text);
                 comm.Parameters.AddWithValue("@LG", LG.Text);
 
@@ -39,23 +39,16 @@ namespace GIU
                 int id = Convert.ToInt32(comm.ExecuteScalar());
 
 
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
+                Response.Write("<script>alert('Defense Graded Succesfully!')</script>");
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
 
-                }
 
 
                 sqlconn.Close();
             }
             catch
             {
-                Response.Write("<script>alert('error!')</script>");
+                Response.Write("<script>alert('Failed to Grade. Please check your information.')</script>");
 
 
             }
