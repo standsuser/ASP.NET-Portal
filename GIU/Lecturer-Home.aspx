@@ -27,7 +27,7 @@
                                         <asp:Button ID="addtodo" runat="server" OnClick="addtodo_click" Text="Add to Meeting To-Do" Width="196px" /> <br />  <br />
                                         <asp:Button ID="viewmeetings" runat="server" OnClick="viewmeetings_click" Text="View Meetings" Width="196px" /> <br />  <br />
                                         <asp:Button ID="viewEE" runat="server" OnClick="viewEE_click" Text="View Free External Examiners" Width="196px" /> <br />  <br />
-                                        <asp:Button ID="recEE" runat="server" OnClick="recEE_click" Text="Recommend External Examiner" Width="196px" /> <br />  <br />
+                                        <asp:Button ID="recEE" runat="server" OnClick="recEE_click" Text="Recommend External Examiner" Width="208px" /> <br />  <br />
                                         <asp:Button ID="supervise" runat="server" OnClick="supervise_click" Text="Supervise Industrial Projects" Width="196px" /> <br />  <br />
                                         <asp:Button ID="gradethesis" runat="server" OnClick="gradethesis_click" Text="Grade Thesis" Width="196px" /> <br />  <br />
                                         <asp:Button ID="gradedefense" runat="server" OnClick="gradedefense_click" Text="Grade Defense" Width="196px" /> <br />  <br />

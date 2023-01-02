@@ -27,7 +27,7 @@ namespace GIU
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
                 comm.Parameters.AddWithValue("@L_id", L_id.Text);
                 comm.Parameters.AddWithValue("@P_code", P_code.Text);
-                comm.Parameters.AddWithValue(" @ee_id", @ee_id.Text);
+                comm.Parameters.AddWithValue("@ee_id", @ee_id.Text);
                 
 
 
@@ -36,26 +36,16 @@ namespace GIU
                 comm.ExecuteNonQuery();
 
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
+                    Response.Write("<script>alert('Recommended External Examiner Succesfully!')</script>");
 
-
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
-
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
-
-                }
+            
 
 
                 sqlconn.Close();
             }
             catch
             {
-                Response.Write("<script>alert('error!')</script>");
+                Response.Write("<script>alert('Failed to Recommend. Please check your information.')</script>");
 
 
             }
