@@ -43,5 +43,17 @@ namespace GIU
             Response.Redirect("5e.aspx");
 
         }
+
+        protected void viewEE_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5f.aspx");
+
+        }
+
+        protected void recEE_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5g.aspx");
+
+        }
     }
 }

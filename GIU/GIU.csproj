@@ -109,6 +109,7 @@
     <Content Include="5c.aspx" />
     <Content Include="5d.aspx" />
     <Content Include="5e.aspx" />
+    <Content Include="5f.aspx" />
     <Content Include="5g.aspx" />
     <Content Include="5h.aspx" />
     <Content Include="5i.aspx" />
@@ -235,6 +236,13 @@
     </Compile>
     <Compile Include="5e.aspx.designer.cs">
       <DependentUpon>5e.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5f.aspx.cs">
+      <DependentUpon>5f.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5f.aspx.designer.cs">
+      <DependentUpon>5f.aspx</DependentUpon>
     </Compile>
     <Compile Include="5g.aspx.cs">
       <DependentUpon>5g.aspx</DependentUpon>
