@@ -116,6 +116,16 @@ namespace GIU
                     Response.Redirect("Profile.aspx");
 
                 }
+                else if (id == 1 && type == "Teaching assistants")
+                {
+                    Response.Redirect("Profile.aspx");
+
+                }
+                else if (id == 1 && type == "External examiners")
+                {
+                    Response.Redirect("Profile.aspx");
+
+                }
                 else
                 {
                     type = "Employee";

@@ -33,19 +33,9 @@ namespace GIU
                 sqlconn.Open();
                 comm.ExecuteNonQuery();
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
-
-
-                if (id == 1)
-                {
+          
                     Response.Write("<script>alert('TA Assigning Succesful!')</script>");
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Failed to Assign TA.')</script>");
-
-                }
 
 
                 sqlconn.Close();

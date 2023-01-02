@@ -60,6 +60,24 @@ namespace GIU
         protected global::System.Web.UI.HtmlControls.HtmlAnchor coordinatorhome;
 
         /// <summary>
+        /// TAhome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor TAhome;
+
+        /// <summary>
+        /// EEhome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor EEhome;
+
+        /// <summary>
         /// lecturerhome control.
         /// </summary>
         /// <remarks>

@@ -10,7 +10,7 @@
                         <header class="panel-heading">
                             <br />
                             <br />
-                            <h2>See Users</h2>
+                            <h2>Schedule Defense</h2>
 
                         </header>
 

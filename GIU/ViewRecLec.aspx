@@ -9,7 +9,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>See Users</h2>
+<h2>View All Recommendations for External Examiners By Lecturer</h2>
 
 </header>
 

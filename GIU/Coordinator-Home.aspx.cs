@@ -25,5 +25,29 @@ namespace GIU
             Response.Redirect("AssignStudentToProject.aspx");
 
         }
+
+        protected void assignTA_click(object sender, EventArgs e)
+        {
+            Response.Redirect("AssignTAToProject.aspx");
+
+        }
+
+        protected void EERec_click(object sender, EventArgs e)
+        {
+            Response.Redirect("ViewRecLec.aspx");
+
+        }
+
+        protected void AssignEE_click(object sender, EventArgs e)
+        {
+            Response.Redirect("AssignEE.aspx");
+
+        }
+
+        protected void scheduledef_click(object sender, EventArgs e)
+        {
+            Response.Redirect("ScheduleDef.aspx");
+
+        }
     }
 }

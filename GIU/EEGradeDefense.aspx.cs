@@ -17,8 +17,8 @@ namespace GIU
         }
         protected void GradeDefense(object sender, EventArgs e)
         {
-      
-
+            try
+            {
                 string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
                 string maincommand = "EXEC EEGradeDefense @EE_id = @ee_id, @sid = @student_id , @defense_location = @dl, @EE_grade = @ee_grade";
@@ -31,9 +31,16 @@ namespace GIU
 
                 sqlconn.Open();
                 comm.ExecuteNonQuery();
-                sqlconn.Close();
-                
+                Response.Write("<script>alert('Defense Graded Succesfully!')</script>");
 
+                sqlconn.Close();
+
+            }
+            catch
+            {
+                Response.Write("<script>alert('Failed To Grade Defens. Check the Information')</script>");
+
+            }
 
         }
     }

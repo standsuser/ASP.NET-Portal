@@ -59,7 +59,8 @@
                          <li><a runat="server" ID="regnav" Visible="true" href="~/Register">Register</a></li>
                         <li><a runat="server" ID="lognav" Visible="true" href="~/Login">Login</a></li>
                         <li><a runat="server" ID="coordinatorhome" Visible="false" href="~/Coordinator-Home">Coordinator Home</a></li> 
-
+                        <li><a runat="server" ID="TAhome" Visible="false" href="~/TA-Home">Teaching Assistant Home</a></li> 
+                      <li><a runat="server" ID="EEhome" Visible="false" href="~/EE-Home">External Examiner Home</a></li> 
                       <li><a runat="server" ID="lecturerhome" Visible="false" href="~/Lecturer-Home">Lecturer Home</a></li> 
                       <li><a runat="server" ID="employeehome" Visible="false" href="~/Employee-Home">Employee Home</a></li> 
                      <li><a runat="server" ID="companyhome" Visible="false" href="~/Company-Home">Company Home</a></li> 

@@ -31,6 +31,7 @@ namespace GIU
             comm.ExecuteNonQuery();
 
 
+            Response.Write("<script>alert('External Examiner Assigned Succesfully!')</script>");
 
             sqlconn.Close();
         }

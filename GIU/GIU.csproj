@@ -133,6 +133,7 @@
     <Content Include="Create-Local-Project.aspx" />
     <Content Include="CreatingBP.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EE-Home.aspx" />
     <Content Include="EEGradeDefense.aspx" />
     <Content Include="EEGradeThesis.aspx" />
     <Content Include="EmpGradeDefense.aspx" />
@@ -192,6 +193,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="Submit-My-Thesis.aspx" />
+    <Content Include="TA-Home.aspx" />
     <Content Include="TAAddToDo.aspx" />
     <Content Include="TACreatePR.aspx" />
     <Content Include="thesisGrade.aspx" />
@@ -373,6 +375,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EE-Home.aspx.cs">
+      <DependentUpon>EE-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EE-Home.aspx.designer.cs">
+      <DependentUpon>EE-Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EEGradeDefense.aspx.cs">
       <DependentUpon>EEGradeDefense.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -509,6 +518,13 @@
     </Compile>
     <Compile Include="Submit-My-Thesis.aspx.designer.cs">
       <DependentUpon>Submit-My-Thesis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TA-Home.aspx.cs">
+      <DependentUpon>TA-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TA-Home.aspx.designer.cs">
+      <DependentUpon>TA-Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="TAAddToDo.aspx.cs">
       <DependentUpon>TAAddToDo.aspx</DependentUpon>

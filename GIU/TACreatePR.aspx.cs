@@ -13,19 +13,30 @@ namespace GIU
     {
         protected void CreatePR(object sender, EventArgs e)
         {
-            string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
-            SqlConnection sqlconn = new SqlConnection(mainconn);
-            string maincommand = "TACreatePR @student_id = @s_id,@teaching_assistant_id = @ta_id,@date = @d,@content = @c";
-            SqlCommand comm = new SqlCommand(maincommand, sqlconn);
+            try
+            {
+                string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
+                SqlConnection sqlconn = new SqlConnection(mainconn);
+                string maincommand = "TACreatePR @student_id = @s_id,@teaching_assistant_id = @ta_id,@date = @d,@content = @c";
+                SqlCommand comm = new SqlCommand(maincommand, sqlconn);
 
-            comm.Parameters.AddWithValue("@s_id", s_id.Text);
-            comm.Parameters.AddWithValue("@ta_id", ta_id.Text);
-            comm.Parameters.AddWithValue("@d", d.Text);
-            comm.Parameters.AddWithValue("@c", c.Text);
+                comm.Parameters.AddWithValue("@s_id", s_id.Text);
+                comm.Parameters.AddWithValue("@ta_id", ta_id.Text);
+                comm.Parameters.AddWithValue("@d", d.Text);
+                comm.Parameters.AddWithValue("@c", c.Text);
 
-            sqlconn.Open();
-            comm.ExecuteNonQuery();
-            sqlconn.Close();
+                sqlconn.Open();
+                comm.ExecuteNonQuery();
+                Response.Write("<script>alert('Progress Report created Succesfully!')</script>");
+
+                sqlconn.Close();
+            }
+            catch
+            {
+                Response.Write("<script>alert('Progress Report creation failed. Please Check Your Information')</script>");
+
+            }
+
 
         }
     }

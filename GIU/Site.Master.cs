@@ -23,6 +23,8 @@ namespace GIU
                 lecturerhome.Visible = false; //lecturer home
                 employeehome.Visible = false; //employee home
                 coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = false;//EE home
 
 
 
@@ -39,6 +41,8 @@ namespace GIU
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = false; //lecturer home
                 coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = false;//EE home
 
 
             }
@@ -54,6 +58,8 @@ namespace GIU
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = false; //lecturer home
                 coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = false;//EE home
 
 
             }
@@ -69,6 +75,8 @@ namespace GIU
                 employeehome.Visible = true; //employee home
                 lecturerhome.Visible = false; //lecturer home
                 coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = false;//EE home
 
 
             }
@@ -84,6 +92,8 @@ namespace GIU
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = true; //lecturer home
                 coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = false;//EE home
 
 
             }
@@ -99,6 +109,42 @@ namespace GIU
                 employeehome.Visible = false; //employee home
                 lecturerhome.Visible = false; //lecturer home
                 coordinatorhome.Visible = true; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = false;//EE home
+
+
+            }
+            if (string.Compare(Request.Url.LocalPath, "/TA-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/TA-Home") == 0 || string.Compare(Login.type, "Teaching assistants") == 0)
+            {
+                sh.Visible = false;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
+                companyhome.Visible = false; // company home
+                employeehome.Visible = false; //employee home
+                lecturerhome.Visible = false; //lecturer home
+                coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = true;//TA home
+                EEhome.Visible = false;//EE home
+
+
+            }
+            if (string.Compare(Request.Url.LocalPath, "/EE-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/EE-Home") == 0 || string.Compare(Login.type, "External examiners") == 0)
+            {
+                sh.Visible = false;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
+                companyhome.Visible = false; // company home
+                employeehome.Visible = false; //employee home
+                lecturerhome.Visible = false; //lecturer home
+                coordinatorhome.Visible = false; //coordinatorhome
+                TAhome.Visible = false;//TA home
+                EEhome.Visible = true;//EE home
 
 
             }

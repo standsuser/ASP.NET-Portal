@@ -11,7 +11,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>See Users</h2>
+<h2>Assign External Examiners to Local Bachelor Projects</h2>
 
 </header>
 

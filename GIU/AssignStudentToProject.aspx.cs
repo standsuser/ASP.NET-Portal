@@ -43,7 +43,7 @@ namespace GIU
             }
             catch
             {
-                Response.Write("<script>alert('Failed to make preference. Please check your information.')</script>");
+                Response.Write("<script>alert('Failed to make Assignments. Please check your information.')</script>");
 
 
             }

@@ -17,7 +17,7 @@ namespace GIU
         }
         protected void AddTODO(object sender, EventArgs e)
         {
-
+            try { 
 
             string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
@@ -30,9 +30,16 @@ namespace GIU
 
             sqlconn.Open();
             comm.ExecuteNonQuery();
+            Response.Write("<script>alert('Updated To-Do Succesfully!')</script>");
+
             sqlconn.Close();
 
+        }
+            catch
+            {
+                Response.Write("<script>alert('Failed to Update To-Do. Please Check Information')</script>");
 
+            }
         }
     }
 }

@@ -17,7 +17,8 @@ namespace GIU
         }
         protected void GradeThesis(object sender, EventArgs e)
         {
-  
+            try
+            {
                 string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
                 string maincommand = "EXEC EEGradeThesis @EE_id = @ee_id, @sid = @student_id , @thesis_title = @tt, @EE_grade = @ee_grade";
@@ -30,7 +31,15 @@ namespace GIU
 
                 sqlconn.Open();
                 comm.ExecuteNonQuery();
-                sqlconn.Close();    
+                Response.Write("<script>alert('Thesis Graded Succesfully!')</script>");
+
+                sqlconn.Close();
             }
+            catch
+            {
+                Response.Write("<script>alert('Failed to Grade Thesis. Check Information')</script>");
+
+            }
+        }
             }
 }
