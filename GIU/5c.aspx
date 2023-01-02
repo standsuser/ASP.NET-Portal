@@ -8,7 +8,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>See Users</h2>
+<h2>Create Meeting</h2>
 
 </header>
 
@@ -21,13 +21,13 @@
                     <asp:TextBox runat="server" required="required" Enabled="true" name="L_id" ID="L_id" class="form-control input-group"></asp:TextBox><br />
 
                      <asp:Label runat="server" AssociatedControlID="ST"><b>start time: </b></asp:Label><br />
-                    <asp:TextBox runat="server" required="required" Enabled="true" name="ST" ID="ST" class="form-control input-group"></asp:TextBox><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" name="ST" ID="ST" class="form-control input-group"  TextMode="DateTime"></asp:TextBox><br />
 
                      <asp:Label runat="server" AssociatedControlID="ET"><b>end time  : </b></asp:Label><br />
-                    <asp:TextBox runat="server" required="required" Enabled="true" name="ET" ID="ET" class="form-control input-group"></asp:TextBox><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" name="ET" ID="ET" class="form-control input-group" TextMode="DateTime"></asp:TextBox><br />
 
                      <asp:Label runat="server" AssociatedControlID="d"><b>date: </b></asp:Label><br />
-                    <asp:TextBox runat="server" required="required" Enabled="true" name="d" ID="d" class="form-control input-group"></asp:TextBox><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" name="d" ID="d" class="form-control input-group"  TextMode="Date"></asp:TextBox><br />
 
                     <asp:Label runat="server" AssociatedControlID="MT"><b>meeting point : </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="MT" ID="MT" class="form-control input-group"></asp:TextBox><br />

@@ -25,7 +25,7 @@ namespace GIU
                 string maincommand = "Exec   SpecifyThesisDeadline @deadline = @dt ";
 
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
-                comm.Parameters.AddWithValue("@deadline", dt.Text);
+                comm.Parameters.AddWithValue("@dt", dt.Text);
              
 
 
@@ -34,26 +34,16 @@ namespace GIU
                 comm.ExecuteNonQuery();
 
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
 
+                    Response.Write("<script>alert('Deadline Specified Successfully!')</script>");
 
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
-
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
-
-                }
 
 
                 sqlconn.Close();
             }
             catch
             {
-                Response.Write("<script>alert('error!')</script>");
+                Response.Write("<script>alert('Failed To Specify Deadline. Please Check Information Inputted!')</script>");
 
 
             }

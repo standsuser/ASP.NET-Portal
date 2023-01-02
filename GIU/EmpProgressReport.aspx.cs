@@ -19,11 +19,10 @@ namespace GIU
         protected void Emp_ProgressReport(object sender, EventArgs e)
         {
 
-            try
-            {
+        
                 string mainconn = ConfigurationManager.ConnectionStrings["Myconnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
-                string maincommand = "Exec EmployeeCreatePR @Employee_id=@e_eid @sid=@s_sid, @defense_location=@d_location, @Employee_grade=@emp_grade";
+                string maincommand = "Exec EmployeeCreatePR @Employee_id=@e_eid, @sid=@s_sid, @date=@d_location, @content=@emp_grade";
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
                 comm.Parameters.AddWithValue("@e_eid", e_eid.Text);
                 comm.Parameters.AddWithValue("@s_sid", s_sid.Text);
@@ -34,30 +33,17 @@ namespace GIU
 
                 comm.ExecuteNonQuery();
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
+
+                    Response.Write("<script>alert('Progress Report Created Successfully!')</script>");
 
 
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Student Assigning Succesful!')</script>");
 
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Failed to Assign Students. Please check your information.')</script>");
-
-                }
 
 
                 sqlconn.Close();
-            }
-            catch
-            {
-                Response.Write("<script>alert('Failed to make preference. Please check your information.')</script>");
+            
 
-
-            }
         }
  
     }

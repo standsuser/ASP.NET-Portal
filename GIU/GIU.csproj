@@ -134,6 +134,7 @@
     <Content Include="EEGradeDefense.aspx" />
     <Content Include="EEGradeThesis.aspx" />
     <Content Include="EmpGradeDefense.aspx" />
+    <Content Include="Employee-Home.aspx" />
     <Content Include="EmpProgressReport.aspx" />
     <Content Include="EmpThesisGrade.aspx" />
     <Content Include="favicon.ico" />
@@ -150,6 +151,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="GradeDefense.aspx" />
     <Content Include="GradeProgressReport.aspx" />
+    <Content Include="Lecturer-Home.aspx" />
     <Content Include="Make-Pref.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="ScheduleDef.aspx" />
@@ -376,6 +378,13 @@
     <Compile Include="EmpGradeDefense.aspx.designer.cs">
       <DependentUpon>EmpGradeDefense.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employee-Home.aspx.cs">
+      <DependentUpon>Employee-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee-Home.aspx.designer.cs">
+      <DependentUpon>Employee-Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmpProgressReport.aspx.cs">
       <DependentUpon>EmpProgressReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -406,6 +415,13 @@
     </Compile>
     <Compile Include="GradeProgressReport.aspx.designer.cs">
       <DependentUpon>GradeProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer-Home.aspx.cs">
+      <DependentUpon>Lecturer-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lecturer-Home.aspx.designer.cs">
+      <DependentUpon>Lecturer-Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

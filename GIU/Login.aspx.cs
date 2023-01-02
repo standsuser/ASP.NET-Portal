@@ -101,6 +101,17 @@ namespace GIU
                     Response.Redirect("Profile.aspx");
 
                 }
+                else if (id == 1 && type == "Lecturers")
+                {
+                    Response.Redirect("Profile.aspx");
+
+                }
+                else
+                {
+                    type = "Employee";
+                    Response.Redirect("Profile.aspx");
+
+                }
 
             }
             catch

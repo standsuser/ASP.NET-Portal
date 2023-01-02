@@ -8,7 +8,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>See Users</h2>
+<h2>Specify Thesis Deadline For All Students</h2>
 
 </header>
 

@@ -11,106 +11,115 @@ namespace GIU
 {
 
 
-    public partial class SiteMaster
+    public partial class Lecturer_Home
     {
 
         /// <summary>
-        /// Image1 control.
+        /// createproj control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Button createproj;
 
         /// <summary>
-        /// homenav control.
+        /// deadline control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor homenav;
+        protected global::System.Web.UI.WebControls.Button deadline;
 
         /// <summary>
-        /// regnav control.
+        /// createmeeting control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor regnav;
+        protected global::System.Web.UI.WebControls.Button createmeeting;
 
         /// <summary>
-        /// lognav control.
+        /// addtodo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lognav;
+        protected global::System.Web.UI.WebControls.Button addtodo;
 
         /// <summary>
-        /// lecturerhome control.
+        /// viewmeetings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lecturerhome;
+        protected global::System.Web.UI.WebControls.Button viewmeetings;
 
         /// <summary>
-        /// employeehome control.
+        /// viewEE control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor employeehome;
+        protected global::System.Web.UI.WebControls.Button viewEE;
 
         /// <summary>
-        /// companyhome control.
+        /// recEE control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor companyhome;
+        protected global::System.Web.UI.WebControls.Button recEE;
 
         /// <summary>
-        /// sh control.
+        /// supervise control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor sh;
+        protected global::System.Web.UI.WebControls.Button supervise;
 
         /// <summary>
-        /// bp control.
+        /// gradethesis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor bp;
+        protected global::System.Web.UI.WebControls.Button gradethesis;
 
         /// <summary>
-        /// profile control.
+        /// gradedefense control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor profile;
+        protected global::System.Web.UI.WebControls.Button gradedefense;
 
         /// <summary>
-        /// MainContent control.
+        /// createPR control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button createPR;
+
+        /// <summary>
+        /// gradePR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button gradePR;
     }
 }

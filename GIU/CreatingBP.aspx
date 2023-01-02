@@ -8,7 +8,7 @@
 <section class="panel">
 <header class="panel-heading">
       <br /><br />
-<h2>See Users</h2>
+<h2>Create Local Bachelor Project</h2>
 
 </header>
 
@@ -35,7 +35,7 @@
 
 
 
-                    &nbsp;<asp:Button ID="okbutton" runat="server" OnClick="LaddToDoList5d" Text="Accept" />
+                    &nbsp;<asp:Button ID="okbutton" runat="server" OnClick="LecturerCreateBP" Text="Accept" />
 
                     
 

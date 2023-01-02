@@ -35,32 +35,21 @@ namespace GIU
                 sqlconn.Open();
 
                 comm.ExecuteNonQuery();
-                
-               
-                int id = Convert.ToInt32(comm.ExecuteScalar());
 
 
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
+                Response.Write("<script>alert('Project created Succesfully!')</script>");
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
 
-                }
 
 
                 sqlconn.Close();
+
             }
             catch
             {
-                    Response.Write("<script>alert('error!')</script>");
-
+                Response.Write("<script>alert('Failed to Create Project. Please Check Information Inputted')</script>");
 
             }
-
 
         }
     }

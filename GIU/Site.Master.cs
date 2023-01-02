@@ -20,6 +20,8 @@ namespace GIU
                 homenav.Visible = true;
                 bp.Visible = false;
                 companyhome.Visible = false;// company home
+                lecturerhome.Visible = false; //lecturer home
+                employeehome.Visible = false; //employee home
 
 
 
@@ -33,6 +35,8 @@ namespace GIU
                 homenav.Visible = false; //main old page
                 bp.Visible = true; //view bachelor projects
                 companyhome.Visible = false;// company home
+                employeehome.Visible = false; //employee home
+                lecturerhome.Visible = false; //lecturer home
 
 
             }
@@ -45,6 +49,36 @@ namespace GIU
                 homenav.Visible = false; //main old page
                 bp.Visible = true; //view bachelor projects
                 companyhome.Visible = true; // company home
+                employeehome.Visible = false; //employee home
+                lecturerhome.Visible = false; //lecturer home
+
+
+            }
+            if (string.Compare(Request.Url.LocalPath, "/Employee-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/Employee-Home") == 0 || string.Compare(Login.type, "Employee") == 0)
+            {
+                sh.Visible = false;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
+                companyhome.Visible = false; // company home
+                employeehome.Visible = true; //employee home
+                lecturerhome.Visible = false; //lecturer home
+
+
+            }
+            if (string.Compare(Request.Url.LocalPath, "/Lecturer-Home.aspx") == 0 || string.Compare(Request.Url.LocalPath, "/Lecturer-Home") == 0 || string.Compare(Login.type, "Lecturers") == 0)
+            {
+                sh.Visible = false;//student home
+                profile.Visible = true;// profile view
+                lognav.Visible = false;// loginpage
+                regnav.Visible = false;//registerpage
+                homenav.Visible = false; //main old page
+                bp.Visible = true; //view bachelor projects
+                companyhome.Visible = false; // company home
+                employeehome.Visible = false; //employee home
+                lecturerhome.Visible = true; //lecturer home
 
 
             }

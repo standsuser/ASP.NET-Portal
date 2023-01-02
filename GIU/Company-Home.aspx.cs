@@ -19,8 +19,6 @@ namespace GIU
 
             Response.Redirect("Add-Employee.aspx");
 
-
-
         }
 
         protected void creatproj_click(object sender, EventArgs e)

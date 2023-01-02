@@ -20,14 +20,14 @@
                     <asp:Label runat="server" AssociatedControlID="e_eid"><b>Enter Employee ID </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="e_eid" ID="e_eid" class="form-control input-group"></asp:TextBox><br />
                    
-                    <asp:Label runat="server" AssociatedControlID="s_sid"><b>Enter Staff ID </b></asp:Label><br />
+                    <asp:Label runat="server" AssociatedControlID="s_sid"><b>Enter Student ID </b></asp:Label><br />
                     <asp:TextBox runat="server" required="required" Enabled="true" name="s_sid" ID="s_sid" class="form-control input-group"></asp:TextBox><br />
                     
-                    <asp:Label runat="server" AssociatedControlID="d_location"><b> Enter Defense Location  </b></asp:Label><br />
-                    <asp:TextBox runat="server" required="required" Enabled="true" name="d_location" ID="d_location" class="form-control input-group"></asp:TextBox><br />
+                    <asp:Label runat="server" AssociatedControlID="d_location"><b> Enter Date  </b></asp:Label><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" name="d_location" ID="d_location" class="form-control input-group" TextMode="DateTime"></asp:TextBox><br />
 
-                     <asp:Label runat="server" AssociatedControlID="emp_grade"><b> Enter Employee Grade </b></asp:Label><br />
-                    <asp:TextBox runat="server" required="required" Enabled="true" name="emp_grade" ID="emp_grade" class="form-control input-group"></asp:TextBox><br />
+                     <asp:Label runat="server" AssociatedControlID="emp_grade"><b> Enter Content </b></asp:Label><br />
+                    <asp:TextBox runat="server" required="required" Enabled="true" name="emp_grade" ID="emp_grade" class="form-control input-group" TextMode="MultiLine"></asp:TextBox><br />
 
                     &nbsp;<asp:Button ID="okbutton" runat="server" OnClick="Emp_ProgressReport" Text="Accept" />
 
