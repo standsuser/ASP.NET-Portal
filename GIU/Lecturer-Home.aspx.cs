@@ -37,5 +37,11 @@ namespace GIU
             Response.Redirect("5d.aspx");
 
         }
+
+        protected void viewmeetings_click(object sender, EventArgs e)
+        {
+            Response.Redirect("5e.aspx");
+
+        }
     }
 }

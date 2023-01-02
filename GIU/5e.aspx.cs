@@ -24,8 +24,13 @@ namespace GIU
                 string maincommand = "Exec ViewMeetingLecturer @Lecturer_id=@L_id, @meeting_id = @m_id ";
 
                 SqlCommand comm = new SqlCommand(maincommand, sqlconn);
-                comm.Parameters.AddWithValue(" @L_id", L_id.Text);
-                comm.Parameters.AddWithValue(" @m_id", m_id.Text);
+                comm.Parameters.AddWithValue("@L_id", L_id.Text);
+
+
+                if (String.Compare(m_id.Text, "") == 0)
+                    comm.Parameters.AddWithValue("@m_id", DBNull.Value);
+                else
+                    comm.Parameters.AddWithValue("@m_id", m_id.Text);
 
 
 
@@ -33,28 +38,20 @@ namespace GIU
 
                 comm.ExecuteNonQuery();
                 SqlDataReader reader = comm.ExecuteReader();
-              
+                meetings.DataSource = reader;
+                meetings.DataBind();
 
-                int id = Convert.ToInt32(comm.ExecuteScalar());
 
 
-                if (id == 1)
-                {
-                    Response.Write("<script>alert('Project created Succesfully!')</script>");
 
-                }
-                else if (id == 0)
-                {
-                    Response.Write("<script>alert('Project creation failed. Please check your information.')</script>");
-
-                }
 
 
                 sqlconn.Close();
+
             }
             catch
             {
-                Response.Write("<script>alert('error!')</script>");
+                Response.Write("<script>alert('Failed To View Meetings. Please Check your information again')</script>");
 
 
             }
